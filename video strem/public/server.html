@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>servidor de streming</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<h1>servidor de streaming</h1>
+	<p>
+		Esta pagina transmite en tiempo real el streaming de la camara web
+	</p>
+	<video  id="video"></video>
+	<canvas id="canvas" width="1280" height="720"></canvas>
+	<script src="/socket.io/socket.io.js"></script>
+	<script>
+		(function(d, w, n, io){
+			'use strict'
+
+			var io=io(),
+				startCamera=false,
+				video=d.querySelector('#video'),
+				canvas=d.querySelector('#canvas'),
+				context=canvas.getContext('2d')
+				navigator.streaming=(
+						n.getUserMedia ||
+						n.webkitGetUserMedia ||
+						n.mozGetUserMedia ||
+						n.msGetUserMedia 
+					)
+
+				navigator.streaming({
+					video:true,
+					audio: false
+				}, function(stream){
+					startCamera=true
+					video.src=w.URL.createObjectURL(stream)
+				}, function(err){
+					alert('erro al acceder a la camara web:'+ err)
+				})
+
+				w.playVideo=(function(cb){
+					return w.requestAnimationFrame||
+							 w.webkitrequestAnimationFrame||
+							  w.mozrequestAnimationFrame||
+							   w.msrequestAnimationFrame||
+							   function(cb){
+							   	w.setTimecut(cb, 1000/100)
+							   }
+				})()
+
+				function streamVideo(context, canvas, video)
+				{
+					var outputStream=canvas.toDataURL('image/png', .4)
+					context.drawImage(video, 0,0)
+					
+					if(startCamera)
+						io.emit('streaming', outputStream)
+
+					playVideo(function(){
+						streamVideo(context, canvas, video)
+					})
+
+				}
+				w.addEventListener('load', function(){
+						video.autoplay=true
+						video.style.display='none'
+						streamVideo(context, canvas, video)
+				})
+		})(document, window, navigator, io)
+	</script>
+</body>
+</html>

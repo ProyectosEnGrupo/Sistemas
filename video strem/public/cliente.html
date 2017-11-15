@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Cliente de streming</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<p>trasmitiendo en tiempo real </p>
+	<img id="streaming">
+	<script src="/socket.io/socket.io.js"></script>
+	<script>
+		(function(d, io){
+			'use strict'
+
+			var io=io()
+
+			io.on('play stream', function(image){
+				d.querySelector('#streaming').src =image
+		})(document, io)
+	</script>
+</body>
+</html>
