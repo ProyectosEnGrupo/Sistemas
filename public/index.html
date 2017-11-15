@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>BOUTIQUE </title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<link rel="stylesheet" type="text/css" href="font.css">
+	
+	
+<body>
+<!-- <header>
+         <div id="subheader"> 
+
+    	         <div id="logotipo">
+    	             <p>
+    	         	  <a href="">BOUTIQUE </a>
+    	             </p>
+    	     	</div>
+    	          <nav>
+    	        	 <ul>
+    	        		<li><a href="#">Inicio</a></li>
+    	        		<li><a href="#">Blog</a></li>
+    	        		<li><a href="#">Contactos</a></li>
+    	        	 </ul>
+    	         </nav>
+         </div>	
+    </header>-->
+	<div class="main">
+<div class="slides">
+     <img src="../img2/1.jpg" alt="">
+	 <img src="../img2/2.jpg" alt="">
+     <img src="../img2/3.jpg" alt="">
+     <img src="../img2/4.jpg" alt="">
+     <img src="../img2/5.jpg" alt="">
+</div>
+</div>
+
+	<main class="main">
+		<div class="contenedor">
+			<section class="cursos">
+				<h2 class="section__titulo">Bienvenidos</h2>
+				<div class="cursos__columna">
+					<img src="../img/2.jpg" width="400px"	height=" 200px" class="cursos__img">
+					<div class="cursos__descripcion">
+						<h3 class="cursos__titulo">Programacion</h3>
+						<p class="cursos__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, inventore!</p>
+					</div>
+				</div>
+				<div class="cursos__columna">
+					<img src="../img/5.jpg" width="400px"	height=" 200px" class="cursos__img">
+					<div class="cursos__descripcion">
+						<h3 class="cursos__titulo">Diseño Web</h3>
+						<p class="cursos__txt">Cum ut doloremque vitae incidunt rerum sit dolorem sapiente labore.</p>
+					</div>
+				</div>
+				<div class="cursos__columna">
+					<img src="../img/4.jpg" width="400px"	height=" 200px" class="cursos__img">
+					<div class="cursos__descripcion">
+						<h3 class="cursos__titulo">Diseño Grafico</h3>
+						<p class="cursos__txt"> Dolorem laudantium iure, neque, iusto id eos nemo iste?</p>
+					</div>
+				</div>
+				<div class="cursos__columna">
+					<img src="../img/28.jpg"width="400px"	height=" 200px" class="cursos__img">
+					<div class="cursos__descripcion">
+						<h3 class="cursos__titulo">Rediseño</h3>
+						<p class="cursos__txt">Quasi fuga quis omnis illum quas, magni distinctio optio reiciendis.</p>
+					</div>
+				</div>
+			</section>
+		</div>
+	</main>
+	
+	<section id="contenido">
+    	          	      <article>
+    	          		 <hgroup><h2 class="titulo">Titulo del articulo</h2></hgroup>
+    	          		     <p class="fecha">19 de octubre del 2017</p>
+    	          		      <img class="dia"  src="../img2/dia.jpg "  rows="15" cols="50" alt="dia">
+    	          		      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    	          		      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    	          		      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    	          		      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    	          		      cillum dolore eu fugiat nulla pariatur</p>
+
+    	          	     </article>
+    	          	     <br>
+
+    	          	          <article>
+    	          		          <hgroup><h2 class="titulo">Titulo del articulo</h2></hgroup>
+    	          		          <p class="fecha">19 de octubre del 2017</p>
+    	          		          <img class="dia2"  src="../img2/dia2.jpg " alt="dia2">
+    	          		          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    	          		          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    	          		          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    	          		          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    	          		          cillum dolore eu fugiat nulla pariatur</p>
+
+    	          	     </article>
+    	             </section>
+
+    	              <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+	<footer class="footer">
+		<div class="social">
+			<a  href="#" class="icon-facebook-official"></a>
+			<a href="#" class="icon-twitter"></a>
+			<a  href="#" class="icon-gplus"></a>
+			<a  href="#" class="icon-vine"></a>
+		</div>
+		<p class="copy">&copy; I.E Nobel 2017 Todos los derechos reservados</p>
+	</footer>
+	
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+   <script type="text/javascript" src="../js2/jquery.slides.js"></script>
+
+   <script> 
+
+   $(function(){
+   	$(".slides").slidesjs({
+   	 	play:{
+   	 		active: true,
+
+   	 		effect:"slides",
+
+   	 		interval:3000,
+
+   	 		auto: true,
+
+   	 		pauseOnHover: false,
+
+   	 		restartDelay: 2500
+   	 	}
+   	});
+   });	
+
+   </script>
+</body>
+</html>	

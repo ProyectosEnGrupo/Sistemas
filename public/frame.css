@@ -1,0 +1,14 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	margin:0;
+	font-family: 'Open Sans', sans-serif;
+	background: #f2f2f2;
+}
+#fran{
+	text-decoration: none;
+	text-align: center;
+	width: 70%;
+}

@@ -1,0 +1,310 @@
+
+*{
+	margin: 0;
+	padding: 0;
+}
+img{
+	display: block;
+	max-width:100%; 
+}
+body{
+	margin:0;
+	font-family: 'Open Sans', sans-serif;
+	background: #f2f2f2;
+}
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	letter-spacing: .5px;
+
+
+}
+/*-------------------Estilos del header-------------*/
+header{
+	width: 100%;
+	float: left;
+	background: #db3f09;
+	box-shadow:0px 3px 5px #000; 
+	-moz box-shadow:0px 3px 5px #000; 
+	-webkit box-shadow:0px 3px 5px #000;
+}
+#subheader{
+	width: 960px;
+	margin: auto;
+}
+#logotipo{
+
+	float: left;
+	width: 300px;
+	padding: 10px 0px;
+	text-align: center;
+}
+#logotipo a{
+	text-decoration: none;
+	font-family:sourcesans-light;
+	font-size:50px;
+	color: #000; 
+}
+#logotipo a:hover{
+	text-decoration: none;
+}
+/*---------------Estilo Menu-----------*/
+header #subheader nav {
+
+	float: left;
+	width: 660px;
+	padding: 30px 0px;
+	text-align: right;
+}
+header #subheader nav ul li{
+
+	display: inline;
+	font-family: sourcesans;
+ }
+ header #subheader nav ul li a{
+ 	text-decoration: 
+ 	color:#1222fc; 
+ 	font-size: 18px;
+ 	padding: 10px;
+ 	border-radius:2px; 
+ 	-moz border-radius:2px; 
+ 	-webkit border-radius:2px; 
+ }
+header #subheader nav ul li a:hover{
+	color:#5e0df1; 
+	background: #050c59;
+	text-decoration: none;
+} 
+
+/*---Main---*/
+#main{
+	width: 100%;
+	margin: 20px 0px 0px 0px;
+	float:left; 
+}
+/*---------------Estilo de slideshow-----------*/
+.main{
+	width: 70%;
+	max-width: 900px;
+	margin: 20px auto;
+}
+.slides{
+	width: 100%;
+}
+.slides img{
+	width: 70%;
+}
+.slidesjs-pagination{
+	background: #424242;
+	list-style: none;
+	overflow: hidden;
+}
+.slidesjs-pagination li{
+	float: left;
+}
+.slidesjs-pagination li a{
+	display: block;
+	padding: 10px 20px;
+	color: #fff;
+	text-decoration:none;
+}
+.slidesjs-pagination li a:hover{
+	background: #000;
+}
+
+.slides .active{
+	background: #000;
+}
+.slidesjs-navigation{
+	background: #000;
+	color: #fff;
+	text-decoration: none;
+	display: inline-block;
+	padding: 11px 20px;
+	float: right;
+}
+/*---------------Estilo de Info-----------*/
+.info__columna{
+	background:#FBA919;
+	color:#fff;
+	padding: 15px;
+	margin-bottom: 30px;
+	width: 580px;
+	height: 600px;
+	text-align: left;
+
+}
+/*---------------Estilo de curso-----------*/
+.section__titulo{
+	text-align: center;
+	font-size: 40px;
+	color: #FBA919;
+	}
+.cursos__columna{
+	position: relative;
+	margin-bottom: 30px;
+}
+.cursos__descripcion{
+	position: absolute;
+	text-align: center;
+	color: #fff;
+	top: 0;
+	left: 0;
+	background:rgba(0,0,0,0,5);
+	width: 60%;
+	height: 100%
+	padding:5px;
+}
+.cursos__titulo{
+	font-size: 25px;
+	margin:5px 0;
+	text-align: center;
+}
+
+/*----------------articulos-----------------*/
+#contenido{
+	margin: 20px;
+	width: 700px;
+	float: left;
+}
+#contenido article{
+	float: left;
+	margin-bottom: 20px;
+
+}
+#contenido article .titulo{
+	font-size:22px;
+	font-family: sourcesans;
+	color: #FBA919;
+}
+#contenido article .fecha{
+	font-size: 14px;
+	color:#1798af;
+	margin-bottom: 5px;
+}
+#contenido article .dia{
+	width: 220px;
+	height: 150px;
+	float: left;
+	margin: 0px 10px 10px 0px;
+}
+#contenido article > p{
+	color: #000;
+	font-size: 14px;
+	text-align: justify;
+	line-height: 27px;
+}
+#contenido article .dia2{
+	width: 220px;
+	height: 150px;
+	float: left;
+	margin: 0px 10px 10px 0px;
+}
+#contenido article > p{
+	color:#000;
+	font-size: 14px;
+	text-align: justify;
+	line-height: 27px;
+}
+#contenido article > p{
+	color: #000;
+	font-size: 14px;
+	text-align: justify;
+	line-height: 27px;
+}
+
+/*---------------Estilo de footer-----------*/
+.footer{
+	background: #333;
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+
+}
+.footer .social [class^="icon-"]{
+	display: inline-block;
+	color: #333;
+	text-decoration: none;
+	font-size: 30px;
+    padding: 10px;
+    background:white;
+    border-radius: 50px;
+    width:50px;
+    height: 50px;
+    line-height:40px;
+
+} 
+/*---------------Estilo responsive-----------*/
+@media(min-width: 480px){
+	.log{
+		font-size: 40px;
+		text-align: center;
+	}
+	.banner__titulo{
+		font-size: 30px;
+		margin:5px 0;
+	}
+	.banner__txt{
+		display: block;
+		font-size: 18px;
+		margin:7px 0;
+	}
+	.info, .cursos{
+		display: flex;
+		justify-content: space-between;
+		margin-top:-10px;
+	}
+	.info__columna{
+		width: 32%;
+	}
+	.info__titulo{
+		font-size: 30px;
+		margin:5px 0;
+    }
+    .section__titulo{
+    	width: 100%;
+    }
+    .cursos{
+        flex-wrap: wrap;
+        margin-top: 0;
+    }
+    .cursos__columna{
+    	width: 48%;
+    	padding: 5px;
+    }
+    
+}
+@media(min-width: 768px){
+	.banner__titulo{
+		font-size: 40px;
+	}
+	.cursos__titulo{
+		font-size: 30px;
+	}
+}
+@media(min-width: 1024px){
+	.contenedor{
+	margin: 10px,90px;
+}
+	.nav{
+		position:static;
+		width:right;
+	}
+	.menu{
+		display: flex;
+		float: right;
+	}
+	.icon-menu{
+		display:none;
+	}
+	.menu__link{
+		color:#fff;
+		background: #FBA919;
+		font-size: 20px;
+	}
+	.banner__titulo{
+		font-size: 60px;
+	}
+	.cursos__titulo{
+		font-size: 30px;
+	}
+}
